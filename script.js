@@ -1,35 +1,35 @@
-// function sentenceBuilder(part1, part2, part3) {
-//   if (typeof part1 !== 'string' || typeof part2 !== 'string' || typeof part3 !== 'string') {
-//     return 'hey, you have to putin strings';
-//   }
-//
-//   return part1 + part2 + part3;
-// }
-//
-// console.log(sentenceBuilder('', 2, ' #1'));
-// console.log(sentenceBuilder('she', ' is', ' fluffy'));
-// console.log(sentenceBuilder('string', ' smells', ' bad'));
+function sentenceBuilder(part1, part2, part3) {
+  if (typeof part1 !== 'string' || typeof part2 !== 'string' || typeof part3 !== 'string') {
+    return 'hey, you have to putin strings';
+  }
 
-// function helloWorld() {
-//   return 'Hello World';
-// }
-//
-// console.log(helloWorld());
+  return part1 + part2 + part3;
+}
 
-// function countLetters(word) {
-//   var count = 0;
-//   var wordArray = word.split('');
+console.log(sentenceBuilder('', 2, ' #1'));
+console.log(sentenceBuilder('she', ' is', ' fluffy'));
+console.log(sentenceBuilder('string', ' smells', ' bad'));
 
-//   for (var i = 0; i < wordArray.length; i++) {
-//     count++;
-//   }
-//
-//   return count;
-// }
-//
-// countLetters('Missy');
-//
-// console.log(countLetters('Missy')) ;
+function helloWorld() {
+  return 'Hello World';
+}
+
+console.log(helloWorld());
+
+function countLetters(word) {
+  var count = 0;
+  var wordArray = word.split('');
+
+  for (var i = 0; i < wordArray.length; i++) {
+    count++;
+  }
+
+  return count;
+}
+
+countLetters('Missy');
+
+console.log(countLetters('Missy')) ;
 
 function longestWord(arrayOfStrings) {
   var count = 0;
